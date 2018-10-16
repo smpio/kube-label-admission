@@ -50,12 +50,6 @@ func main() {
 		"after server cert).")
 	flag.StringVar(&KeyFile, "tls-key-file", KeyFile, ""+
 		"File containing the default x509 private key matching --tls-cert-file.")
-	// flag.StringVar(&objKind.Group, "obj-api-group", objKind.Group, ""+
-	// 	"API group of objects to watch (may be empty string, \"extensions\", \"apps\", etc).")
-	// flag.StringVar(&objKind.Version, "obj-api-version", objKind.Version, ""+
-	// 	"API group version of objects to watch (e.g. \"v1\").")
-	// flag.StringVar(&objKind.Kind, "obj-kind", objKind.Kind, ""+
-	// 	"Kind of objects to watch (e.g. \"Namespace\", \"Pod\").")
 	flag.StringVar(&protectedLabel, "protected-label", protectedLabel, ""+
 		"Object label that only specified users can set.")
 	flag.Var(&allowedUsers, "allow-user", ""+
